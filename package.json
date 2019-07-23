@@ -1,0 +1,26 @@
+{
+  "name": "terminal-bigtext-generator",
+  "version": "1.0.0",
+  "description": "console-bigtext-generator is a simple library which allows users to generate Big Texts on the console. This library can be used for making application banners in the terminal.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsSayantan/terminal-bigtext-generator.git"
+  },
+  "keywords": [
+    "terminal",
+    "generator",
+    "big",
+    "text",
+    "terminal-bigtext-generator"
+  ],
+  "author": "Sayantan Ghosh <sayantan.ghosh03@gmail.com> (https://github.com/itsSayantan)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itsSayantan/terminal-bigtext-generator/issues"
+  },
+  "homepage": "https://github.com/itsSayantan/terminal-bigtext-generator#readme"
+}
