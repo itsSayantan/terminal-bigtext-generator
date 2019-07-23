@@ -48,31 +48,40 @@ function print(printObj = { stringToPrint: '', spaceBetweenCharacters: 0 }) {
     let finalStringMap = {}
     let finalString = ''
 
+    for (let i = 0; i < 6; ++i) {
+        finalStringMap[`${i}`] = ''
+    }
+
     for (let i = 0; i < characterArrayLength; ++i) {
         const character = characterArray[i]
         const characterConstantsArr = characterConstants[character].split('\n')
-
-        finalStringMap[`${i}-0`] = characterConstantsArr[0]
-        finalStringMap[`${i}-1`] = characterConstantsArr[1]
-        finalStringMap[`${i}-2`] = characterConstantsArr[2]
-        finalStringMap[`${i}-3`] = characterConstantsArr[3]
-        finalStringMap[`${i}-4`] = characterConstantsArr[4]
-        finalStringMap[`${i}-5`] = characterConstantsArr[5]
+// console.log(characterConstantsArr)
+        for (let j = 0; j < 6; j++) {
+            finalStringMap[j] += characterConstantsArr[j]
+        }
+        // finalStringMap[i] += characterConstantsArr[i][0]
+        // finalStringMap[i] += characterConstantsArr[i][1]
+        // finalStringMap[i] += characterConstantsArr[i][2]
+        // finalStringMap[i] += characterConstantsArr[i][3]
+        // finalStringMap[i] += characterConstantsArr[i][4]
+        // finalStringMap[i] += characterConstantsArr[i][5]
     }
 
-    debuglog(finalStringMap)
+    console.log(finalStringMap)
 
     const finalStringMapKeys = Object.keys(finalStringMap)
     const finalStringMapKeysLength = finalStringMapKeys.length
 
-    for (let i = 0; i < characterArrayLength; ++i) {
-        process.stdout.write(finalStringMap[`0-${i}`])
-        process.stdout.write(finalStringMap[`1-${i}`])
-        process.stdout.write(finalStringMap[`2-${i}`])
-        process.stdout.write(finalStringMap[`3-${i}`])
-        process.stdout.write(finalStringMap[`4-${i}`])
-        process.stdout.write(finalStringMap[`5-${i}`])
-        console.log()
+    for (let i = 0; i < 6; ++i) {
+        // process.stdout.write('\n' + finalStringMap[`0-${i}`])
+        // process.stdout.write('\n' + finalStringMap[`1-${i}`])
+        // process.stdout.write('\n' + finalStringMap[`2-${i}`])
+        // process.stdout.write('\n' + finalStringMap[`3-${i}`])
+        // process.stdout.write('\n' + finalStringMap[`4-${i}`])
+        // process.stdout.write('\n' + finalStringMap[`5-${i}`])
+
+        process.stdout.write(finalStringMap[i])
+        console.log('')
     }
 }
 
