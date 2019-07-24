@@ -2,4 +2,12 @@ const {
     paint,
 } = require('./helpers')
 
-paint({stringToPrint: 'CHATCLI                                    ChatCLI'})
+function print(stringToPrint) {
+    paint({ stringToPrint })
+}
+
+print('CHATCLI                                    ChatCLI')
+
+module.exports = {
+    print,
+}
