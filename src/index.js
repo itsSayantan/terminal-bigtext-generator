@@ -7,7 +7,7 @@ function print(stringToPrint) {
 }
 
 // print('CHATCLI                                    ChatCLI')
-print('ZION')
+print('ABCDaaa--EFGHI')
 
 module.exports = {
     print,

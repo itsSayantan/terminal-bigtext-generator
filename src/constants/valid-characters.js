@@ -30,7 +30,8 @@ const validCharacters = {
     Y: true,
     Z: true,
 
-    blank: true
+    blank: true,
+    hyphen: true,
 }
 
 module.exports = {

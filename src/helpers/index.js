@@ -13,7 +13,13 @@ function checkValidCharacters(character) {
 
 function resolveCharacters(characterString, spaceBetweenCharacters) {
     let characterArray = characterString.toString().trim().split('')
-    characterArray = characterArray.map(character => (character === ' ') ? 'blank' : character)
+    characterArray = characterArray.map(character => {
+        switch(character) {
+            case ' ': return 'blank'
+            case '-': return 'hyphen'
+            default: return character
+        }
+    })
     let checkValidCharactersResponse = {
         allCharactersValid: true,
         invalidCharacters: []
@@ -47,7 +53,7 @@ function paint(printObj = { stringToPrint: '' }) {
 
     let finalStringMap = {}
 
-    for (let i = 0; i < 6; ++i) {
+    for (let i = 0; i < characterConstants.CHARACTER_ROW_COUNT; ++i) {
         finalStringMap[`${i}`] = ''
     }
 
@@ -55,12 +61,12 @@ function paint(printObj = { stringToPrint: '' }) {
         const character = characterArray[i]
         const characterConstantsArr = characterConstants[character].split('\n')
 
-        for (let j = 0; j < 6; j++) {
+        for (let j = 0; j < characterConstants.CHARACTER_ROW_COUNT; j++) {
             finalStringMap[j] += characterConstantsArr[j]
         }
     }
 
-    for (let i = 0; i < 6; ++i) {
+    for (let i = 0; i < characterConstants.CHARACTER_ROW_COUNT; ++i) {
         process.stdout.write(finalStringMap[i])
         console.log('')
     }
