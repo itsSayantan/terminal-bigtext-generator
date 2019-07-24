@@ -1,5 +1,5 @@
 const {
-    print,
+    paint,
 } = require('./helpers')
 
-print({stringToPrint: 'a h'})
+paint({stringToPrint: 'CHATCLI                                    ChatCLI'})

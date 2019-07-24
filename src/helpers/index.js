@@ -41,7 +41,7 @@ function resolveCharacters(characterString, spaceBetweenCharacters) {
     }
 }
 
-function print(printObj = { stringToPrint: '', spaceBetweenCharacters: 0 }) {
+function paint(printObj = { stringToPrint: '' }) {
     const characterArray = resolveCharacters(printObj.stringToPrint, printObj.spaceBetweenCharacters)
     const characterArrayLength = characterArray.length
 
@@ -55,36 +55,21 @@ function print(printObj = { stringToPrint: '', spaceBetweenCharacters: 0 }) {
     for (let i = 0; i < characterArrayLength; ++i) {
         const character = characterArray[i]
         const characterConstantsArr = characterConstants[character].split('\n')
-// console.log(characterConstantsArr)
+
         for (let j = 0; j < 6; j++) {
             finalStringMap[j] += characterConstantsArr[j]
         }
-        // finalStringMap[i] += characterConstantsArr[i][0]
-        // finalStringMap[i] += characterConstantsArr[i][1]
-        // finalStringMap[i] += characterConstantsArr[i][2]
-        // finalStringMap[i] += characterConstantsArr[i][3]
-        // finalStringMap[i] += characterConstantsArr[i][4]
-        // finalStringMap[i] += characterConstantsArr[i][5]
     }
-
-    console.log(finalStringMap)
 
     const finalStringMapKeys = Object.keys(finalStringMap)
     const finalStringMapKeysLength = finalStringMapKeys.length
 
     for (let i = 0; i < 6; ++i) {
-        // process.stdout.write('\n' + finalStringMap[`0-${i}`])
-        // process.stdout.write('\n' + finalStringMap[`1-${i}`])
-        // process.stdout.write('\n' + finalStringMap[`2-${i}`])
-        // process.stdout.write('\n' + finalStringMap[`3-${i}`])
-        // process.stdout.write('\n' + finalStringMap[`4-${i}`])
-        // process.stdout.write('\n' + finalStringMap[`5-${i}`])
-
         process.stdout.write(finalStringMap[i])
         console.log('')
     }
 }
 
 module.exports = {
-    print,
+    paint,
 }
