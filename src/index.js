@@ -6,7 +6,8 @@ function print(stringToPrint) {
     paint({ stringToPrint })
 }
 
-print('CHATCLI                                    ChatCLI')
+// print('CHATCLI                                    ChatCLI')
+print('ZION')
 
 module.exports = {
     print,

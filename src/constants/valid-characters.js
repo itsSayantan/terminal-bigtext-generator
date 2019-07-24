@@ -18,7 +18,17 @@ const validCharacters = {
     M: true,
     N: true,
     O: true,
+    P: true,
+    Q: true,
+    R: true,
+    S: true,
     T: true,
+    U: true,
+    V: true,
+    W: true,
+    X: true,
+    Y: true,
+    Z: true,
 
     blank: true
 }

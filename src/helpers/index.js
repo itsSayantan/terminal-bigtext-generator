@@ -46,7 +46,6 @@ function paint(printObj = { stringToPrint: '' }) {
     const characterArrayLength = characterArray.length
 
     let finalStringMap = {}
-    let finalString = ''
 
     for (let i = 0; i < 6; ++i) {
         finalStringMap[`${i}`] = ''
@@ -60,9 +59,6 @@ function paint(printObj = { stringToPrint: '' }) {
             finalStringMap[j] += characterConstantsArr[j]
         }
     }
-
-    const finalStringMapKeys = Object.keys(finalStringMap)
-    const finalStringMapKeysLength = finalStringMapKeys.length
 
     for (let i = 0; i < 6; ++i) {
         process.stdout.write(finalStringMap[i])
