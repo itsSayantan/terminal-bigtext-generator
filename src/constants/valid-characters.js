@@ -55,6 +55,7 @@ const validCharacters = {
 
     blank: true,
     hyphen: true,
+    exclamationMark: true,
 
     zero: true,
     one: true,

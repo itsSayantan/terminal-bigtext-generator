@@ -17,6 +17,7 @@ function resolveCharacters(characterString, spaceBetweenCharacters) {
         switch(character) {
             case ' ': return 'blank'
             case '-': return 'hyphen'
+            case '!': return 'exclamationMark'
             case '0': return 'zero'
             case '1': return 'one'
             case '2': return 'two'
