@@ -7,7 +7,7 @@ function print(stringToPrint) {
 }
 
 // print('CHATCLI - sayantan')
-print('A+-B')
+print('A-B')
 
 module.exports = {
     print,
