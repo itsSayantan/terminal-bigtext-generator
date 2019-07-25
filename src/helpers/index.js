@@ -16,6 +16,7 @@ function resolveCharacters(characterString, spaceBetweenCharacters) {
     characterArray = characterArray.map(character => {
         switch(character) {
             case ' ': return 'blank'
+            case '+': return 'plus'
             case '-': return 'minus'
             case '0': return 'zero'
             case '1': return 'one'

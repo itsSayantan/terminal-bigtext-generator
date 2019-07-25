@@ -54,6 +54,7 @@ const validCharacters = {
     Z: true,
 
     blank: true,
+    plus: true,
     minus: true,
 
     zero: true,
