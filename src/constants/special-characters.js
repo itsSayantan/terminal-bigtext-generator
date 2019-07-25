@@ -20,9 +20,9 @@ const blank = ' \n \n \n \n \n \n \n \n '
    
  */
 
-const hyphen = '      \n      \n ____ \n|____|\n      \n      \n      \n      '
+const minus = '      \n      \n ____ \n|____|\n      \n      \n      \n      '
 
 module.exports = {
     blank,
-    hyphen,
+    minus,
 }
