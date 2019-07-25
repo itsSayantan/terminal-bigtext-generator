@@ -55,6 +55,17 @@ const validCharacters = {
 
     blank: true,
     hyphen: true,
+
+    zero: true,
+    one: true,
+    two: true,
+    three: true,
+    four: true,
+    five: true,
+    six: true,
+    seven: true,
+    eight: true,
+    nine: true,
 }
 
 module.exports = {
