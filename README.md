@@ -6,7 +6,7 @@ console-bigtext-generator is a simple library which allows users to generate Big
 
 #Installation
 ```
-npm install terminal-bigtext-gennerator --save
+npm install terminal-bigtext-generator --save
 ```
 
 #Usage
