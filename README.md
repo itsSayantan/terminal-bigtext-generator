@@ -1,22 +1,22 @@
-#terminal-bigtext-generator
+# terminal-bigtext-generator
 
-#Description
+# Description
 
 console-bigtext-generator is a simple library which allows users to generate Big Texts on the console. This library can be used for making application banners in the terminal.
 
-#Installation
+# Installation
 ```
 npm install terminal-bigtext-generator --save
 ```
 
-#Usage
+# Usage
 ```
 const tbg = require('terminal-bigtext-generator')
 
 tbg.print('ABC')
 ```
 
-#Support
+# Support
 
 This library currently supports characters like ```A-Z a-z 0-9 - !```
 
